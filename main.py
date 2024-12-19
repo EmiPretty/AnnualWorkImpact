@@ -38,7 +38,12 @@ def filter_frequentation_rows(df):
 work_time_file = get_clean_work_time("data/temps-de-travail-annuel-depuis-1851.csv")
 frequentation_file = pd.read_csv("data/frequentation-gares.csv", sep=";")
 
-work_time_columns = ["Date", "Temps annuel de travail (SNCF)", "Temps annuel de travail (France)"]
+work_time_columns = [
+    "Date", 
+    "Temps annuel de travail (SNCF)", 
+    "Temps annuel de travail (France)",
+]
+
 frequentation_columns = [
     "Nom de la gare",
     "Code postal",
